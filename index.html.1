@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Excellence | 2026 Innovation</title>
+    <style>
+        /* CSS Styling */
+        :root {
+            --toyota-red: #eb0a1e;
+            --dark-grey: #333;
+            --light-grey: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--toyota-red);
+            text-decoration: none;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--dark-grey);
+            font-weight: 500;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1621259182978-f09e5e2aa88a?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+
+        .container { padding: 40px 5%; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: var(--light-grey);
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .specs {
+            background: #fff;
+            padding: 10px;
+            border-left: 4px solid var(--toyota-red);
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: var(--dark-grey);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">TOYOTA</a>
+    <nav>
+        <a href="#lineup">2026 Lineup</a>
+        <a href="#history">Our History</a>
+        <a href="#safety">Safety</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Lead the Way</h1>
+    <p>Discover the 2026 Toyota Collection: Reliability meets Future Tech.</p>
+</section>
+
+<div class="container" id="lineup">
+    <h2>Featured 2026 Models</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1623860841270-2a628399994b?auto=format&fit=crop&q=80&w=800" alt="Toyota Corolla">
+            <h3>Corolla Hybrid</h3>
+            <p>The world's most popular sedan, now with 5th Gen Hybrid technology.</p>
+            <div class="specs">
+                <strong>Est. MPG:</strong> 53 City / 46 Hwy<br>
+                <strong>Key Feature:</strong> 12.3-inch Digital Cockpit
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1594502184342-2e12f877aa73?auto=format&fit=crop&q=80&w=800" alt="Toyota RAV4">
+            <h3>RAV4 Plug-In</h3>
+            <p>Unmatched versatility with class-leading electric range.</p>
+            <div class="specs">
+                <strong>Power:</strong> 306 HP<br>
+                <strong>EV Range:</strong> Up to 75 km
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1616455579100-2ceaa4eb2d37?auto=format&fit=crop&q=80&w=800" alt="Toyota Tacoma">
+            <h3>Tacoma i-FORCE MAX</h3>
+            <p>The ultimate adventure machine with a redesigned hybrid powertrain.</p>
+            <div class="specs">
+                <strong>Drive:</strong> 4WD with TRD Off-Road options<br>
+                <strong>Tech:</strong> Toyota Safety Sense 3.0
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="history" style="background: #f9f9f9;">
+    <h2>The Toyota Legacy</h2>
+    <p>Founded in <strong>1937</strong> by Kiichiro Toyoda, Toyota has grown from a textile loom manufacturer into the world's largest automaker. Known for the <em>Toyota Production System</em>, the brand is synonymous with Quality, Durability, and Reliability (QDR).</p>
+    <ul>
+        <li><strong>1966:</strong> The first Corolla is launched.</li>
+        <li><strong>1997:</strong> The Prius debuts as the first mass-produced hybrid.</li>
+        <li><strong>2026:</strong> Expanding the "Beyond Zero" (bZ) electric lineup.</li>
+    </ul>
+</div>
+
+<footer>
+    <p>&copy; 2026 Toyota Fan Site | Created for Educational Purposes</p>
+</footer>
+
+</body>
+</html>
